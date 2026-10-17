@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://erdinc47klinik.github.io/DincDis-site/sitemap.xml
