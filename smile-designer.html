@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>Gülüşünü Tasarla | Dinç Diş Kliniği</title>
+  <meta name="description" content="Yapay zekâ destekli gülüş tasarım aracı. Fotoğrafınızı yükleyin, Hollywood veya doğal gülüş stilini seçin ve öncesi/sonrası karşılaştırmasını yapın." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(160deg, #EDF9FC 0%, #E1F3FA 45%, #D8EFF7 100%);
+      background-attachment: fixed;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #173C30;
+    }
+    #shell {
+      max-width: 430px;
+      margin: 0 auto;
+      background: transparent;
+      min-height: 100vh;
+      position: relative;
+    }
+    #screen {
+      padding-bottom: 88px;
+    }
+    .topbar {
+      background: linear-gradient(135deg, #0B6E86, #29B8E0);
+      position: relative;
+    }
+    .topbar-inner {
+      padding: 26px 22px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      position: relative;
+    }
+    .backbtn {
+      position: absolute;
+      top: -4px;
+      left: -6px;
+      background: rgba(255, 255, 255, 0.18);
+      border: none;
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .title {
+      color: #fff;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      margin: 0;
+      line-height: 1.2;
+    }
+    .subtitle {
+      color: #DBF3E7;
+      font-size: 13px;
+      margin: 4px 0 0;
+    }
+    .content {
+      padding: 20px;
+    }
+    .iframe-container {
+      width: 100%;
+      height: calc(100vh - 200px);
+      border: none;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.55);
+      box-shadow: 0 4px 18px rgba(11, 110, 134, 0.06);
+    }
+    .loading {
+      text-align: center;
+      padding: 40px 20px;
+      color: #6E9686;
+    }
+  </style>
+</head>
+<body>
+  <div id="shell">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <button class="backbtn" onclick="history.back()">←</button>
+        <div>
+          <div class="title">Gülüşünü Tasarla</div>
+          <div class="subtitle">Yapay zekâ destekli gülüş önizlemesi</div>
+        </div>
+      </div>
+    </div>
+    <div id="screen">
+      <div class="content">
+        <div class="loading">
+          <p>Gülüş Tasarım AR yükleniyor...</p>
+        </div>
+        <iframe
+          class="iframe-container"
+          src="https://gulustasarim-in346iic.manus.space/"
+          title="Gülüş Tasarım AR"
+          allow="camera; microphone; geolocation"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Geri butonu işlevselliği
+    document.querySelector('.backbtn').addEventListener('click', () => {
+      history.back();
+    });
+
+    // iframe yüklendikten sonra loading mesajını gizle
+    document.querySelector('.iframe-container').onload = function() {
+      document.querySelector('.loading').style.display = 'none';
+    };
+  </script>
+</body>
+</html>

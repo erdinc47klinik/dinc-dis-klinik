@@ -1,0 +1,115 @@
+{
+  "id": "./",
+  "name": "Dinç Diş Kliniği",
+  "short_name": "Dinç Diş",
+  "description": "Dinç Diş Kliniği — Adana Seyhan'da implant, çene cerrahisi, kanal tedavisi, zirkonyum ve estetik diş hekimliği. Online randevu, tedavi takibi ve diş sağlığı asistanı.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
+  "orientation": "portrait",
+  "background_color": "#EAF7FC",
+  "theme_color": "#0B6E86",
+  "lang": "tr",
+  "dir": "ltr",
+  "categories": [
+    "health",
+    "medical",
+    "lifestyle",
+    "shopping"
+  ],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-1-home.png",
+      "sizes": "860x1864",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Ana sayfa"
+    },
+    {
+      "src": "screenshot-2-services.png",
+      "sizes": "860x1864",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Hizmetler"
+    },
+    {
+      "src": "screenshot-3-booking.png",
+      "sizes": "860x1864",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Randevu al"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Randevu Al",
+      "short_name": "Randevu",
+      "description": "Hızlıca randevu oluştur",
+      "url": "./index.html#booking",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Mağaza",
+      "short_name": "Mağaza",
+      "description": "Ürünlere göz at",
+      "url": "./index.html#store",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "İletişim",
+      "short_name": "İletişim",
+      "description": "Kliniğe ulaş",
+      "url": "./index.html#contact",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

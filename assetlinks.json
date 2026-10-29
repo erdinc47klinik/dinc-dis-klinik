@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.nurdisdentalklinik.twa",
+        "sha256_cert_fingerprints": ["87:D0:6B:29:FF:F8:EA:A4:42:1C:48:2F:EF:E3:43:5F:F4:5F:7F:38:91:C6:D6:B1:96:8A:F9:AF:FA:AE:F6:2E"]
+      }
+    }]
